@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "commonform-validate": "^4.0.0",
+    "docx-templates": "^4.9.2"
+  }
+}
