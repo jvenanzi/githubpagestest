@@ -2,6 +2,7 @@
   "dependencies": {
     "@babel/standalone": "^7.19.5",
     "commonform-validate": "^4.0.0",
-    "docx-templates": "^4.9.2"
+    "docx-templates": "^4.9.2",
+    "html2canvas": "^1.4.1"
   }
 }
