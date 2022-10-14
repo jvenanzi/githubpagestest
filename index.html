@@ -6,10 +6,10 @@
 	<title>Document</title>
 </head>
 <body>
-    <form>
+    <form id="formData">
         <label for="fileName">Name Of File: </label> <input type="text" id="fileName" name="fileName"></label><br>
-        <label for="fName">First Name: </label> <input type="text" id="formData" name="fName"></label><br>
-        <label for="lName">Last Name: </label> <input type="text" id="formData" name="lName"></label><br>
+        <label for="fName">First Name: </label> <input type="text" id="fName" name="fName"></label><br>
+        <label for="lName">Last Name: </label> <input type="text" id="lName" name="lName"></label><br>
     </form>
 
     <button type="submit" onclick="exportDoc();">Export</button>
@@ -30,6 +30,7 @@
             document.body.appendChild(fileDownload);
             fileDownload.href = source;
             var userfileName = document.getElementById('fileName').innerHTML
+            console.log('userfileName: ',userfileName)
             fileDownload.download = `${userfileName}.doc`;
             fileDownload.click();
             document.body.removeChild(fileDownload);
